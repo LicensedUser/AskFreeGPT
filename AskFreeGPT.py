@@ -70,7 +70,11 @@ time.sleep(2)
 # Try to find and click the image "1.png"
 if not locate_and_click("1.png"):
     print("ErrorNoSEND")
-time.sleep(20)
+time.sleep(60)
+
+if not locate_and_click("StayOFFLINE.png"):
+    print("NO LOGIN POP-UP")
+
 
 if not locate_and_click("Copy.png"):
     print("ErrorNoCOPY")
