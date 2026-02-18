@@ -72,6 +72,7 @@ if not locate_and_click("1.png"):
     print("ErrorNoSEND")
 time.sleep(20)
 
-if not locate_and_click("1.png"):
+if not locate_and_click("Copy.png"):
     print("ErrorNoCOPY")
-time.sleep(20)
+    if not locate_and_click("Copy2.png"):
+        print("ErrorNoCOPY2")
