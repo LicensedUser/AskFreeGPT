@@ -75,6 +75,9 @@ time.sleep(60)
 if not locate_and_click("StayOFFLINE.png"):
     print("NO LOGIN POP-UP")
 
+if not locate_and_click("Down.png"):
+    print("NO Down")
+time.sleep(5)
 
 if not locate_and_click("Copy.png"):
     print("ErrorNoCOPY")
