@@ -1,0 +1,15 @@
+import sys
+import webbrowser
+import pyautogui
+import time
+
+if len(sys.argv) < 2:
+    print("Usage: python AskFreeGPT.py <query>")
+    sys.exit(1)
+
+query = sys.argv[1]
+
+webbrowser.open("https://chatgpt.com")
+time.sleep(10)  # wait for browser to load
+
+pyautogui.write(query)
