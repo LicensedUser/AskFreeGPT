@@ -62,7 +62,7 @@ if len(sys.argv) < 2:
 query = sys.argv[1]
 
 webbrowser.open("https://chatgpt.com")
-time.sleep(10)  # wait for browser to load
+time.sleep(20)  # wait for browser to load
 
 pyautogui.write(query)
 time.sleep(2)
@@ -70,14 +70,14 @@ time.sleep(2)
 # Try to find and click the image "1.png"
 if not locate_and_click("1.png"):
     print("ErrorNoSEND")
-time.sleep(60)
+time.sleep(120)
 
 if not locate_and_click("StayOFFLINE.png"):
     print("NO LOGIN POP-UP")
 
 if not locate_and_click("Down.png"):
     print("NO Down")
-time.sleep(5)
+time.sleep(10)
 
 if not locate_and_click("Copy.png"):
     print("ErrorNoCOPY")
