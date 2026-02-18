@@ -69,6 +69,9 @@ time.sleep(2)
 
 # Try to find and click the image "1.png"
 if not locate_and_click("1.png"):
-    print("Skipping this URL due to error with SHARE")
+    print("ErrorNoSEND")
+time.sleep(20)
 
-time.sleep(2)
+if not locate_and_click("1.png"):
+    print("ErrorNoCOPY")
+time.sleep(20)
