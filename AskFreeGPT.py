@@ -3,6 +3,7 @@ import webbrowser
 import pyautogui
 import time
 
+import numpy as np
 import cv2
 
 def find_with_opencv(template_path, threshold=0.85):
